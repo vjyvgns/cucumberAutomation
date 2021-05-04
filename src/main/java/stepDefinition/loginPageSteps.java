@@ -11,7 +11,12 @@ public class loginPageSteps {
 
     @When("user enters username and password")
     public void user_enters_username_and_password() {
-        System.out.println("Username and Password");
+        System.out.println("Username and Password: ");
+    }
+
+    @When("user enters {string} and {string} with creds")
+    public void user_enters_username_and_password_with_creds(String username, String password) {
+        System.out.println("Username and Password: " +username +password);
     }
 
     @When("clicks on login button")
